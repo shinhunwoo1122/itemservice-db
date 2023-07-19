@@ -17,8 +17,9 @@ import javax.sql.DataSource;
 //@Import(JdbcTemplateV1Config.class) //JdbcTemplate 사용
 //@Import(JdbcTemplateV2Config.class) //NamedJdbcTemplate 사용함
 //@Import(JdbcTemplateV3Config.class) //NamedJdbcTemplate 사용 SimpleJdbcInsert사용함
+//@Import(MyBatisConfig.class) //mybatis 사용
 @Slf4j
-@Import(MyBatisConfig.class) //mybatis 사용
+@Import(JpaConfig.class) //JPA 사용
 @SpringBootApplication(scanBasePackages = "hello.itemservice.web")
 public class ItemServiceApplication {
 
